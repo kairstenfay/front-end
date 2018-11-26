@@ -1,0 +1,25 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+}
+#welcome-section {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    color: white;
+    font-family: cursive;
+    background-color: coral;
+    justify-content: center;
+    align-content: center;
+}
+h1 {
+    margin: auto;
+}
+@media (min-width: 400px) {
+    #projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

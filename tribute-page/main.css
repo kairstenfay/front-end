@@ -1,0 +1,29 @@
+#image {
+    max-width: 45%;
+    margin: auto;
+    border-radius: 10px;
+}
+body {
+    background-color: slategray;
+}
+#title {
+    text-align: center;
+    font-family: cursive;
+    font-size: 42px;
+}
+#full-card {
+    background-color: white;
+    width: 80%;
+    margin: 25px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 2px black;
+    padding: 20px;
+}
+#img-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#img-caption {
+    padding: 25px
+}
