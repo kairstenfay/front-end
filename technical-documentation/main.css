@@ -1,10 +1,41 @@
 body {
     display: grid;
     grid-template-columns: 1fr;
+    font-family: Calibri, sans-serif;
+    width: 90%;
 }
 
 @media (min-width: 300px) {
     body {
         grid-template-columns: 150px 100%;
     }
+}
+.code-block {
+    background-color: lightgrey;
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 30%;
+}
+h1, h2, nav {
+    font-family: Arial, sans-serif;
+}
+#navbar {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: flex-start;
+    justify-content: center;
+    margin: 10px;
+    border: 2px solid darkgrey;
+}
+header {
+    padding: 10px;
+}
+a.nav-link {
+    padding: 10px;
+    color: black;
+    border: 1px dashed black;
+    font-weight: bold;
+}
+#main-doc {
+    width: 90%;
 }

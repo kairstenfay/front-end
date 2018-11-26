@@ -3,77 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <link href="main.css" rel="stylesheet">
-    <title>Title</title>
+    <title>Survey Form</title>
 </head>
 <body>
-    <h1 id="title">Survey Form</h1>
-    <form action="/submit.html">
-        <label for="name" id="name-label">* Name: </label>
-        <input type="text" name="name" id="name" required placeholder="Enter your name">
+    <div id="full-card">
+        <h1 id="title">Programmer's Survey 💻</h1>
+        <form action="/submit.html">
+            <div>
+                <label for="name" id="name-label">* Name: </label>
+                <input type="text" name="name" id="name" required placeholder="Enter your name">
+            </div>
+            <div>
+                <label for="email" id="email-label">* Email: </label>
+                <input type="email" name="email" id="email" required placeholder="Enter your email">
+            </div>
+            <div>
+                <label for="number" id="number-label">* Age: </label>
+                <input type="number" name="age" id="number" min="0" max="125" placeholder="Age">
+            </div>
+            <div>
+                <label for="dropdown">Highest level of education attained:</label>
+                <br>
+                <select id="dropdown" name="Highest level of education attained:">
+                    <option value="select">Select a degree</option>
+                    <option value="high school">High school diploma or GED</option>
+                    <option value="associates">Associate's degree</option>
+                    <option value="bachelor's">Bachelor's degree</option>
+                    <option value="master's">Master's degree</option>
+                    <option value="PhD, MD, or other ">Master's degree</option>
+                </select>
+            </div>
+            <fieldset>
+                <legend>How satisfied are you with your current job?</legend>
 
-        <label for="email" id="email-label">* Email: </label>
-        <input type="email" name="email" id="email" required placeholder="Enter your email">
+                <input id="very satisfied" type="radio" name="Job Satisfaction">
+                <label for="very satisfied">Very satisfied</label>
 
-        <label for="number" id="number-label">* Age: </label>
-        <input type="number" name="age" id="number" min="0" max="125" placeholder="Age">
+                <input id="satisfied" type="radio" name="Job Satisfaction">
+                <label for="satisfied">Satisfied</label>
 
-        <select id="dropdown" name="Highest level of education attained:">
-            <option value="select">Select a degree</option>
-            <option value="high school">High school diploma or GED</option>
-            <option value="associates">Associate's degree</option>
-            <option value="bachelor's">Bachelor's degree</option>
-            <option value="master's">Master's degree</option>
-            <option value="PhD, MD, or other ">Master's degree</option>
-        </select>
+                <input id="neutral" type="radio" name="Job Satisfaction">
+                <label for="neutral"> Neutral</label>
 
-        <fieldset>
-            <legend>How satisfied are you with your current job?</legend>
-            
-            <input id="very satisfied" type="radio" name="Job Satisfaction">
-            <label for="very satisfied">Very satisfied</label>
-            
-            <input id="satisfied" type="radio" name="Job Satisfaction">
-            <label for="satisfied">Satisfied</label>
+                <input id="unsatisfied" type="radio" name="Job Satisfaction">
+                <label for="unsatisfied"> Unsatisfied</label>
 
-            <input id="neutral" type="radio" name="Job Satisfaction">
-            <label for="neutral"> Neutral</label>
+                <input id="very unsatisfied" type="radio" name="Job Satisfaction">
+                <label for="very unsatisfied"> Very unsatisfied</label>
+            </fieldset>
 
-            <input id="unsatisfied" type="radio" name="Job Satisfaction">
-            <label for="unsatisfied"> Unsatisfied</label>
+            <fieldset>
+                <legend>Which programming languages do you know?</legend>
 
-            <input id="very unsatisfied" type="radio" name="Job Satisfaction">
-            <label for="very unsatisfied"> Very unsatisfied</label>
-        </fieldset>
+                <input id="python" type="checkbox" name="Programming Languages Known">
+                <label for="python">Python</label>
 
-        <fieldset>
-            <legend>Which programming languages do you know?</legend>
+                <input id="java" type="checkbox" name="Programming Languages Known">
+                <label for="java">Java</label>
 
-            <input id="python" type="checkbox" name="Programming Languages Known">
-            <label for="python">Python</label>
+                <input id="c#" type="checkbox" name="Programming Languages Known">
+                <label for="c#">C#</label>
 
-            <input id="java" type="checkbox" name="Programming Languages Known">
-            <label for="java">Java</label>
+                <input id="php" type="checkbox" name="Programming Languages Known">
+                <label for="php">PHP</label>
 
-            <input id="c#" type="checkbox" name="Programming Languages Known">
-            <label for="c#">C#</label>
+                <input id="ruby" type="checkbox" name="Programming Languages Known">
+                <label for="ruby">Ruby</label>
 
-            <input id="php" type="checkbox" name="Programming Languages Known">
-            <label for="php">PHP</label>
+                <input id="scala" type="checkbox" name="Programming Languages Known">
+                <label for="scala">Scala</label>
 
-            <input id="ruby" type="checkbox" name="Programming Languages Known">
-            <label for="ruby">Ruby</label>
+                <input id="js" type="checkbox" name="Programming Languages Known">
+                <label for="js">JavaScript</label>
+            </fieldset>
 
-            <input id="scala" type="checkbox" name="Programming Languages Known">
-            <label for="scala">Scala</label>
+            <label for="textfield">Additional comments:</label>
+            <input type="textfield" id="textfield" name="comments" placeholder="Tell us your thoughts...">
 
-            <input id="js" type="checkbox" name="Programming Languages Known">
-            <label for="js">JavaScript</label>
-        </fieldset>
-
-        <label for="textfield">Additional comments:</label>
-        <input type="textfield" name="comments">
-
-        <input type="submit" id="submit">
-    </form>
+            <input type="submit" id="submit">
+        </form>
+    </div>
 </body>
 </html>
